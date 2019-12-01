@@ -73,5 +73,16 @@ details of the cutting dataset:
 
 * The two data streams were not synchronized at the time of collection and a 
 post-processing step is required for their synchronization.
+
+* **Note:** The synchronization is a work in progress. 
  
 ### Instructions
+The `process_data.py` script loads the bagfiles and reorganizes them in CSV files while adding the 
+corresponding labels. The CSV files are easier to handle in PyTorch and TensorFlow. To generate them, 
+run the following command:
+```
+# From aml_robot_cutting_dataset
+python2 process_data.py   
+``` 
+This creates the `data` folder in the root directory, containing all the CSV files for each cut 
+divided by each joint. 
