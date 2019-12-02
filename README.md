@@ -84,5 +84,5 @@ run the following command:
 # From aml_robot_cutting_dataset
 python2 process_data.py   
 ``` 
-This creates the `data` folder in the root directory, containing all the CSV files for each cut 
-divided by each joint. 
+This creates the `data` folder in the root directory, containing all the CSV files for each cut. 
+Use the argument `--save_plots` to save the corresponding plots.  
