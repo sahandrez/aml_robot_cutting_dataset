@@ -28,6 +28,7 @@ if __name__ == '__main__':
     for i in range(N_CUTS):
         for j in range(N_EACH_CUT):
             bag_name = 'cut_' + str(i + 1) + '/cut_' + str(i + 1) + '_' + str(j + 1) + '.bag'
+            print('Processing bagfile ' + bag_name)
             dh = RobotDataHelper(bag_name,
                                  sampling_rate=10.,
                                  material_label=MATERIAL_LABELS[i],
