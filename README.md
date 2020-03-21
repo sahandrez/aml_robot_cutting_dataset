@@ -53,7 +53,7 @@ details of the cutting dataset:
 | 12      | Hardwood | 3/8            | 1111       |
 | **Total** |        |                | 14863      |
 
-* The dataset consists of two directories:
+* The dataset consists of three directories:
    * `robot_data`: Robot states and some other useful information collected in the 
    form of bagfiles.     
         ```
@@ -70,6 +70,8 @@ details of the cutting dataset:
         ```
    * `ft_sensor_data`: Force/Torque sensor data measuring the cutting force and torque
    at 200 Hz.  
+   
+   * `data`: Processed robot data (see [Instructions](README.md#instructions) for more information).
 
 * The two data streams were not synchronized at the time of collection and a 
 post-processing step is required for their synchronization.
@@ -92,4 +94,4 @@ run the following command:
 python2 process_data.py   
 ``` 
 This creates the `data` folder in the root directory, containing all the CSV files for each cut. 
-Use the argument `--save_plots` to save the corresponding plots.  
+Use the argument `--save_plots` to save the corresponding plots.
