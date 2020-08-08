@@ -95,3 +95,15 @@ python2 process_data.py
 ``` 
 This creates the `data` folder in the root directory, containing all the CSV files for each cut. 
 Use the argument `--save_plots` to save the corresponding plots.
+
+
+### Citation
+If you are using this dataset in your work, please cite the following paper. It will be published in IROS 2020. 
+```
+@article{rezaei2020learning,
+  title={Learning the Latent Space of Robot Dynamics for Cutting Interaction Inference},
+  author={Rezaei-Shoshtari, Sahand and Meger, David and Sharf, Inna},
+  journal={arXiv preprint arXiv:2007.11167},
+  year={2020}
+}
+```
